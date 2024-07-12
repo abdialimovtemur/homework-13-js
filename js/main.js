@@ -6,6 +6,19 @@
 
 
 
+// let obj = { a: 2, b: 3, c: 4 };
+
+// let n = prompt("Object qiymatlari nechchi marta oshirilsin")
+// function numberDegree(obj) {
+//     let res = {}
+//     for (let key in obj) {
+//        res[key]  = obj[key] * n
+//     }
+//     return res
+// }
+
+// console.log(numberDegree(obj));
+
 
 
 
@@ -14,6 +27,20 @@
 
 // 2. argument sifatida berilgan string da nechta so’zda a harfi ishtirok etganini aniqlaydigan function tuzing
 
+// let userStr = prompt("So'zni kiriting");
+
+// function searchAletter() {
+//     let total = 0;
+//     let newArr = userStr.split('')
+//     newArr.forEach(element => {
+//         if(element == "a" || element == "A"){
+//             total++
+//         }
+//     });
+//     alert("Kiritgan so'zingizda " + total + " ta a harfi ishtirok etgan")
+// }
+
+// searchAletter()
 
 
 
@@ -40,7 +67,7 @@
 // read: true
 // },
 // ]
-// Output: 
+// Output:
 // 1. Akrom Malik ning Halqa kitobi o’qilmagan
 // 2. O’tkir Hoshimov ning Dunyoning ishlari kitobi o’qilgan
 // 3. Shayx Muhammad Sodiq Muhammad Yusuf hazratlarining Iymon kitobi o’qilgan
@@ -62,10 +89,12 @@
 
 
 
-
-
-
-
+// let strings = ["text", "world", "laptop"];
+// let new_strings = strings.reduce((str, item) => {
+//   str[item] = item.length;
+//   return str;
+// }, {});
+// console.log(new_strings);
 
 
 
@@ -77,6 +106,29 @@
 
 
 
+
+// function objArr() {
+//     const animals = [
+//         "dog",
+//         "chicken",
+//         "cat",
+//         "dog",
+//         "chicken",
+//         "chicken",
+//         "rabbit",
+//       ];
+      
+//       let new_animals = animals.reduce((animal, item) => {
+//         if (animal[item]) {
+//           animal[item] += 1;
+//         } else {
+//           animal[item] = 1;
+//         }
+//         return animal;
+//       }, {});
+//       console.log(new_animals);
+// }
+// objArr()
 
 
 
@@ -111,11 +163,50 @@
 
 
 
+// let array = [false, 1, 10, "", null, "sultonqul", 1.13, 0];
+
+// const getTruthyFalsy = (array) => {
+//   let truthy = [];
+//   let falsy = [];
+//   array.forEach((item) => {
+//     if (item) {
+//       truthy.push(item);
+//     } else {
+//       falsy.push(item);
+//     }
+//   });
+//   console.log("Truthy:", truthy);
+//   console.log("Falsy:", falsy);
+// };
+
+
+// getTruthyFalsy(array);
 
 
 
 
 
-// 8. Gapdagi eng uzun va eng qisqa so’zlarni aniqlab {minWord: “…”, maxWord: “….”} qiymat qaytaruvchi minManWord() nomli function yarating
+// 8. Gapdagi eng uzun va eng qisqa so’zlarni aniqlab {minWord: “…”, maxWord: “…”} qiymat qaytaruvchi minManWord() nomli function yarating
 // Input: “Men dasturlash kursida o’qiyman”
 // Output: {minWord: “Men”, maxWord: “dasturlash”}
+
+
+// let str = prompt("So'zni kiriting")
+
+// const minManWord = (str) => {
+//     let arr = str.split(" ");
+//     let min = arr[0];
+//     let max = arr[0];
+//     arr.forEach((item) => {
+//       if (item.length < min.length) {
+//         min = item;
+//       }
+//       if (item.length > max.length) {
+//         max = item;
+//       }
+//     });
+//     console.log("min word:", min);
+//     console.log("max word:", max);
+//   };
+  
+//   minManWord(str);
